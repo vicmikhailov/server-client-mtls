@@ -1,0 +1,14 @@
+server:
+  ssl:
+    key-store: classpath:certs/server.p12
+    key-store-password: changeit
+    key-store-type: pkcs12
+    key-alias: springboot-server
+    key-password: changeit
+    client-auth: need
+    trust-store: classpath:certs/truststore.jks
+    trust-store-password: changeit
+  port: 8443
+logging:
+  level:
+    root: info
